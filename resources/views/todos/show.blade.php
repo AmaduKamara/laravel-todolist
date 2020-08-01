@@ -14,7 +14,7 @@
       <p>{{ $todo->body }}</p>
       <div class="badge badge-danger badge-pill font-weight-light py-1 px-2">{{ $todo->due }}</div>
       <hr>
-      <a href="/todos/{{ $todo->id }}/edit" class="btn btn-outline-info">Edit</a>
+      <a href="/todos/{{ $todo->id }}/edit" class="btn btn-info">Edit</a>
 
       {!! Form::open(['action' => ['TodosController@destroy', $todo->id], 'method' => 'POST', 'class' => 'float-right']) !!}
         {{ Form::hidden('_method', 'DELETE') }}
