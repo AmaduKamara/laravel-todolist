@@ -10,9 +10,6 @@
     <div class="mt-3 border shadow-sm rounded w-75 mx-auto">
       <div class="p-3">
         <h4>Create a new todo</h4>
-        <div>
-          @include('inc.messages')
-        </div>
         {!! Form::open(['action' => 'TodosController@store', 'method' => 'POST']) !!}
           {{ Form::bsText('text') }}
           {{ Form::bsTextArea('body') }}
